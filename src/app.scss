@@ -1,0 +1,52 @@
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("/fonts/JetBrainsMono[wght].ttf") format(truetype) tech(variations);
+}
+
+@font-face {
+  font-family: "JetBrains Mono";
+  font-style: italic;
+  src: url("/fonts/JetBrainsMono-Italic[wght].ttf") format(truetype) tech(variations);
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter[opsz,wght].ttf") format(truetype) tech(variations);
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: italic;
+  src: url("/fonts/Inter-Italic[opsz,wght].ttf") format(truetype) tech(variations);
+}
+
+$breakpoint-md: 768px !default;
+
+:root {
+  --theme-color-white: #EFF2EF;
+  --theme-color-text: #484a47; //  #1f1a38;
+  --theme-color-accent: #ff003f;
+  --theme-color-background: #d9d9d9; //  #ead7d1; // #ffeedb; // #fdf0d5; // #e0e0ce; // #faf0ca ;
+
+  color: var(--theme-color-text);
+  background-color: var(--theme-color-background);
+  font-family: "Inter", sans-serif;
+}
+
+h1 {
+  font-family: "JetBrains Mono", monospace;
+  font-weight: 800;
+  text-shadow: 0 1.5px 0 var(--theme-color-white);
+  color: var(--theme-color-accent);
+}
+
+p {
+  line-height: 1.5;
+}
+
+strong {
+  font-weight: bolder;
+  //font-style: italic;
+  color: var(--theme-color-accent);
+  text-shadow: 0 1.5px 0 var(--theme-color-white);
+}
